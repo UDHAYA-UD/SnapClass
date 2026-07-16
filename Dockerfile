@@ -1,4 +1,4 @@
-FROM python:3.12-slim-bullseye
+FROM python:3.10-slim-bullseye
 
 # Install system dependencies required for OpenCV and dlib (face-recognition)
 RUN apt-get update --fix-missing && apt-get install -y --no-install-recommends \
