@@ -21,10 +21,10 @@ app = Flask(__name__)
 app.secret_key = 'snapclass_simplified_2025'
 
 # MySQL connection configuration
-MYSQL_HOST =
-MYSQL_USER =
-MYSQL_PASSWORD =
-MYSQL_DB =
+MYSQL_HOST = os.getenv('MYSQL_HOST', 'localhost')
+MYSQL_USER = os.getenv('MYSQL_USER', 'root')
+MYSQL_PASSWORD = os.getenv('MYSQL_PASSWORD', '')
+MYSQL_DB = os.getenv('MYSQL_DB', 'snapclass_db')
 
 # Global attendance set
 att = set()

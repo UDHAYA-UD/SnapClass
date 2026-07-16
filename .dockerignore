@@ -1,0 +1,16 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+venv/
+env/
+.env
+uploads/
+processed/
+models/
+dataset/
+temp_uploads/
+static/processed/
+static/temp/
+*.pdf
+*.csv
